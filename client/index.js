@@ -1,7 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import { render } from 'react-dom'
+import { AppContainer } from 'react-hot-loader';
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
+import todoApp from './modules/Todo/reducers'
+import App from './modules/Todo/components/App'
 
-import App from './modules/App/App';
+let store = createStore(todoApp)
 
-
-ReactDOM.render(<App />,document.getElementById('app'));
+render(
+   <AppContainer>
+     <App  store={store}/>
+   </AppContainer>,
+   document.getElementById('app')
+)
