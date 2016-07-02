@@ -5,7 +5,7 @@ const Header = () => {
      <div className="navbar navbar-default navbar-fixed-top">
        <div className="container">
          <div className="navbar-header">
-           <a className="navbar-brand">Project Name</a>
+           <a className="navbar-brand">React-Redux Todo App</a>
          </div>
        </div>
      </div>
