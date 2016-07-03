@@ -13,6 +13,10 @@ const fakeDatabase = {
     id: v4(),
     text: 'lets go',
     completed: false,
+  },{
+    id:v4(),
+    text: 'Jun',
+    completed: false,
   }]
 };
 
