@@ -13,7 +13,7 @@ const todos = combineReducers({
   listByFilter,
 });
 
-export default todos
+export default todos;
 
 
 export const getVisibleTodos = (state, filter) => {
